@@ -1,0 +1,25 @@
+curl_cffi>=0.15.0b3  # Fast HTTP client (2-3x faster than requests, 0.14.0 has SOCKS5 regression)
+requests[socks]  # Fallback for compatibility
+PyGithub
+tzdata
+urllib3
+PyYAML>=6.0
+python-dotenv>=1.0.0
+pytdbot[tdjson]>=0.8.8
+PySocks>=1.7.1
+tqdm>=4.65.0  # Progress bars for verification
+psutil>=5.9.0  # Resource monitoring (CPU, RAM, network)
+aiofiles>=23.0.0  # Async file I/O for non-blocking writes
+ahocorasick-rs>=1.0  # Rust Aho-Corasick for fast SNI domain matching
+
+# Optional dependencies for enhanced verification performance
+aiodns>=3.0.0
+dnspython>=2.3.0
+
+# Development and testing (optional)
+# Install with: pip install -r requirements.txt --extra-index-url https://pypi.org/simple/ pytest pytest-cov pytest-asyncio
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+pytest-xdist>=3.5.0  # Parallel test execution
+pytest-mock>=3.12.0  # Mocking utilities

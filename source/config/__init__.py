@@ -1,0 +1,38 @@
+"""config package — configuration, settings, and static data."""
+
+# Re-export stable settings constants.
+# URL configs (URLS, URLS_EXTRA_BYPASS, etc.) are lazy-loaded via
+# __getattr__ in settings.py and not exported here.
+from config.settings import (
+    GITHUB_TOKEN,
+    REPO_NAME,
+    VALIDATION_TCP_CONCURRENCY,
+    VALIDATION_HTTP_CONCURRENCY,
+    VALIDATION_TCP_TIMEOUT,
+    VALIDATION_HTTP_TIMEOUT,
+    VALIDATION_MAX_WORKERS,
+    XRAY_BASE_PORT,
+    XRAY_STARTUP_TIMEOUT,
+    ENABLE_DEFAULT_FILES,
+    ENABLE_BYPASS_UNSECURE,
+    ENABLE_PROTOCOL_SPLIT,
+    ENABLE_TG_PROXY,
+    PUBLISH_RAW_FILES,
+)
+
+__all__ = [
+    "GITHUB_TOKEN",
+    "REPO_NAME",
+    "VALIDATION_TCP_CONCURRENCY",
+    "VALIDATION_HTTP_CONCURRENCY",
+    "VALIDATION_TCP_TIMEOUT",
+    "VALIDATION_HTTP_TIMEOUT",
+    "VALIDATION_MAX_WORKERS",
+    "XRAY_BASE_PORT",
+    "XRAY_STARTUP_TIMEOUT",
+    "ENABLE_DEFAULT_FILES",
+    "ENABLE_BYPASS_UNSECURE",
+    "ENABLE_PROTOCOL_SPLIT",
+    "ENABLE_TG_PROXY",
+    "PUBLISH_RAW_FILES",
+]
